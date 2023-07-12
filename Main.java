@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        View view = new View();
+        CalculatorModel theModel = new CalculatorModel();
+        CalculatorView theView = new CalculatorView();
+        CalculatorControl theController = new CalculatorControl(theView, theModel);
+
     }
+
 }
